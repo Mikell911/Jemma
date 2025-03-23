@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply font-sans;
+    color: #F0ECE9;
+}
+
+@layer components {
+    .title-h1 {
+        @apply font-serif text-[80px] leading-[101px] font-normal text-Main;
+    }
+    .title-h2 {
+        @apply font-serif text-[54px] leading-[68px] text-center font-normal text-Main;
+    }
+    .text-body {
+        @apply font-sans text-[20px] leading-[26px] font-medium text-Main;
+    }
+    .btn {
+        @apply font-sans px-4 py-2 text-[18px] leading-[25px] font-semibold uppercase text-Main;
+    }
+}
